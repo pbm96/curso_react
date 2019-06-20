@@ -1,0 +1,32 @@
+{
+    "tareas":[
+        {
+            "titulo":"tarea1",
+            "responsable":"Pablo",
+            "descripcion":"holaaaaaaa",
+            "prioridad":"baja"
+
+        },
+        {
+            "titulo":"tarea2",
+            "responsable":"Peter",
+            "descripcion":"holaaaaaaa1",
+            "prioridad":"baja"
+
+        },
+        {
+            "titulo":"tarea3",
+            "responsable":"Panda",
+            "descripcion":"holaaaaaaa2",
+            "prioridad":"alta"
+
+        },
+        {
+            "titulo":"tarea4",
+            "responsable":"Panda",
+            "descripcion":"holaaaaaaa2",
+            "prioridad":"alta"
+
+        }
+    ]
+}
