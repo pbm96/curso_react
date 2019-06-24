@@ -18,6 +18,16 @@ class App extends Component {
             tareas:[...this.state.tareas, tarea]
         })
     }
+    removeTarea(index){
+        if(window.confirm("Seguro de Borrarlo?")){
+            this.setState({
+                tareas: this.state.tareas.filter((e,i) => {
+                    return i!== index;
+                })
+            })
+        }
+       
+    }
     render(){
 
        const tareas =  this.state.tareas.map((tarea, i) => {
@@ -31,6 +41,9 @@ class App extends Component {
                     <div className="card-body">
                         <p>{tarea.descripcion}</p>
                         <strong>{tarea.responsable}</strong>
+                    </div>
+                    <div className="card-footer">
+                        <button className="btn btn-danger" onClick={this.removeTarea.bind(this, i)}>Eliminar</button>
                     </div>
                 </div>
                 </div>

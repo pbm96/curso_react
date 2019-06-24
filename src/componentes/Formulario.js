@@ -42,7 +42,7 @@ class Formulario extends Component{
                         <input type="text" name="descripcion" className="form-control" placeholder="descripcion" onChange={this.handleInput}/>
                     </div>
                     <div className="form-group">
-                        <select  name="responsable" className="form-control" onChange={this.handleInput}>
+                        <select  name="prioridad" className="form-control" onChange={this.handleInput}>
                             <option value="baja" default>baja</option>
                             <option value="media">media</option>
                             <option value="alta">alta</option>
